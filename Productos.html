@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Orellana - [Nombre de la Página]</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+      <header class="bg-info py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                 <img src="img/Logo farmacia.jpg" alt="Ferretería La Bendición Logo" style="height: 60px; margin-right: 15px;">
+                <h1 class="h3 mb-0">Farmacia</h1>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="productos.html">PRODUCTOS</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="info.html">SERVICIOS</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  <main class="products-page-container">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Nuestros Productos</h2>
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Medicamento 1.jpg" class="card-img-top" alt="Desarmadores">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 1</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalDesarmadores">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Medicamento 2.jpeg" class="card-img-top" alt="Martillos">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 2</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalMartillos">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Medicamento 3.jpg" class="card-img-top" alt="Tenazas">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 3</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalTenazas">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Medicamento 4.jpg" class="card-img-top" alt="Tenaza Carpintera">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 4</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalTenazaCarpintera">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Medicamento 5.jpeg" class="card-img-top" alt="Serruchos">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 5</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalSerruchos">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/tabcin.jpg" class="card-img-top" alt="Taladros">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 6</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalTaladros">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Ibopodrol.jpeg" class="card-img-top" alt="Taladros Inalámbricos">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 7</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalTaladrosInalambricos">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center product-card">
+                        <img src="img/Alkalzelser.jpeg" class="card-img-top" alt="Pulidora">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamento 8</h5>
+                            <button class="btn btn-ver" data-bs-toggle="modal" data-bs-target="#modalPulidora">Ver</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalDesarmadores" tabindex="-1" aria-labelledby="modalDesarmadoresLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDesarmadoresLabel">Medicamento 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Medicamento 1.jpg" class="img-fluid mb-3 modal-product-img" alt="Set de Desarmadores">
+                    <p class="product-price">Precio: L 150.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, molestias non fuga expedita magnam fugit nihil quo quidem laudantium harum itaque fugiat cum alias, est similique reprehenderit placeat? Blanditiis, ratione!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMartillos" tabindex="-1" aria-labelledby="modalMartillosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMartillosLabel">Medicamento 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Medicamento 2.jpeg" class="img-fluid mb-3 modal-product-img" alt="Medicamento2">
+                    <p class="product-price">Precio: L 180.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed fugiat earum aperiam eius fuga aut, architecto alias ratione voluptates nobis repudiandae est repellendus voluptatibus in voluptate neque pariatur placeat qui.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTenazas" tabindex="-1" aria-labelledby="modalTenazasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTenazasLabel">Medicamento 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Medicamento 3.jpg" class="img-fluid mb-3 modal-product-img" alt="Medicamento 3">
+                    <p class="product-price">Precio: L 120.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, officia illum! Iste recusandae, ab temporibus sit corporis at sequi molestiae nostrum numquam quod, quis exercitationem consequuntur dignissimos ratione odit neque.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTenazaCarpintera" tabindex="-1" aria-labelledby="modalTenazaCarpinteraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTenazaCarpinteraLabel">Medicamento 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Medicamento 4.jpg" class="img-fluid mb-3 modal-product-img" alt="Tenaza Carpintera">
+                    <p class="product-price">Precio: L 95.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta aspernatur. Neque eius consectetur repellendus modi aut perferendis eos harum animi quis adipisci! Aut ad adipisci vero! Reprehenderit, dolorum fugiat.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSerruchos" tabindex="-1" aria-labelledby="modalSerruchosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSerruchosLabel">Medicamento 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Medicamento 5.jpeg" class="img-fluid mb-3 modal-product-img" alt="Juego de Serruchos">
+                    <p class="product-price">Precio: L 300.00</p>
+                    <p class="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus debitis, distinctio amet cumque molestiae recusandae nobis corporis excepturi eos officiis, minus atque error dignissimos. Aut molestiae quisquam facilis cupiditate!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTaladros" tabindex="-1" aria-labelledby="modalTaladrosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTaladrosLabel">Medicamento 6</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/tabcin.jpg" class="img-fluid mb-3 modal-product-img" alt="Taladro Eléctrico">
+                    <p class="product-price">Precio: L 350.00</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo quibusdam sunt, asperiores soluta laboriosam deserunt totam mollitia dicta sint aperiam sit voluptates! Fugit explicabo modi, libero minus nihil voluptatem.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTaladrosInalambricos" tabindex="-1" aria-labelledby="modalTaladrosInalambricosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTaladrosInalambricosLabel">Medicamento 7</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Alkalzelser.jpeg" class="img-fluid mb-3 modal-product-img" alt="Taladro Inalámbrico">
+                    <p class="product-price">Precio: L 1,500.00</p>
+                    <p class="product-description">Libertad de movimiento con este taladro inalámbrico de alto rendimiento. Ideal para trabajos en lugares sin acceso a corriente. Incluye batería de larga duración y cargador rápido.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPulidora" tabindex="-1" aria-labelledby="modalPulidoraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPulidoraLabel">Pulidora Angular de Velocidad Variable</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/pulidora.png" class="img-fluid mb-3 modal-product-img" alt="Pulidora Angular">
+                    <p class="product-price">Precio: L 1,100.00</p>
+                    <p class="product-description">Herramienta versátil para cortar, lijar y pulir diversos materiales como metal, piedra y madera. Control de velocidad para adaptarse a diferentes aplicaciones y un acabado perfecto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="iconos">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter-x"></i>
+            </div>
+            <p class="mb-0">TODOS LOS DERECHOS RESERVADOS. 2025 © AGENCIA GLOBAL S.A. DE C.V.</p>
+        </div>
+    </footer>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
